@@ -15,6 +15,8 @@
     <div>
         <h1>Get Comment</h1>
         @Html.Partial("_Comment")
+        @*Model.SingleOrDefault(x => x.Id == 600)是用來提取某一個集合物件的某個item的*@
+        @Html.Partial("_Comment2", Model.SingleOrDefault(x => x.Id == 600))
     </div>
 </body>
 </html>
